@@ -1,4 +1,10 @@
-List of currencies:
+This is a quick experiment in using the Bellman Ford Algorithm to detect an arbitrage opportunity in the forex market. 
+
+This algoritm finds the shortest path in a graph, even if a negative cycle exists.
+
+By taking the exchange rates, and then taking the inverse logarithm (-log(ex1 * ex2)) or (log(1/(ex1 * ex2))) we take the heaviest path (The most profitable) and turn it into the shortest path. If the shortest path has a total weight of less than 1, then the original path was profitable, and exchanging the currencies in that order would create a profit. 
+
+List of currencies Used:
 Kuwaiti Dinar (KWD)
 Bahraini Dinar (BHD)
 Omani Rial (OMR)
